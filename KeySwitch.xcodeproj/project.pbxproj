@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1005677F2288583F000F5F9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1005677E2288583F000F5F9D /* UIKit.framework */; };
+		100567812288583F000F5F9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100567802288583F000F5F9D /* Foundation.framework */; };
+		100567832288583F000F5F9D /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100567822288583F000F5F9D /* CydiaSubstrate.framework */; };
+		100567922288583F000F5F9D /* KeySwitch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 100567912288583F000F5F9D /* KeySwitch.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1005677B2288583E000F5F9D /* KeySwitch.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = KeySwitch.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		1005677E2288583F000F5F9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		100567802288583F000F5F9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		100567822288583F000F5F9D /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		100567872288583F000F5F9D /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		1005678B2288583F000F5F9D /* KeySwitch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = KeySwitch.plist; path = Package/Library/PreferenceLoader/Preferences/KeySwitch.plist; sourceTree = "<group>"; };
+		1005678F2288583F000F5F9D /* KeySwitch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeySwitch-Prefix.pch"; sourceTree = "<group>"; };
+		100567902288583F000F5F9D /* KeySwitch.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = KeySwitch.xm; sourceTree = "<group>"; };
+		100567912288583F000F5F9D /* KeySwitch.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KeySwitch.mm; sourceTree = "<group>"; };
+		100567952288583F000F5F9D /* KeySwitch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = KeySwitch.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/KeySwitch.plist; sourceTree = "<group>"; };
+		1005679C22885B83000F5F9D /* KeySwitch.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KeySwitch.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100567772288583E000F5F9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1005677F2288583F000F5F9D /* UIKit.framework in Frameworks */,
+				100567812288583F000F5F9D /* Foundation.framework in Frameworks */,
+				100567832288583F000F5F9D /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100567702288583D000F5F9D = {
+			isa = PBXGroup;
+			children = (
+				100567842288583F000F5F9D /* KeySwitch */,
+				1005677D2288583E000F5F9D /* Frameworks */,
+				1005677C2288583E000F5F9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1005677C2288583E000F5F9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1005677B2288583E000F5F9D /* KeySwitch.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1005677D2288583E000F5F9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1005677E2288583F000F5F9D /* UIKit.framework */,
+				100567802288583F000F5F9D /* Foundation.framework */,
+				100567822288583F000F5F9D /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		100567842288583F000F5F9D /* KeySwitch */ = {
+			isa = PBXGroup;
+			children = (
+				100567902288583F000F5F9D /* KeySwitch.xm */,
+				100567912288583F000F5F9D /* KeySwitch.mm */,
+				100567852288583F000F5F9D /* Package */,
+				1005678E2288583F000F5F9D /* Supporting Files */,
+			);
+			path = KeySwitch;
+			sourceTree = "<group>";
+		};
+		100567852288583F000F5F9D /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				100567862288583F000F5F9D /* DEBIAN */,
+				100567882288583F000F5F9D /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		100567862288583F000F5F9D /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				100567872288583F000F5F9D /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		100567882288583F000F5F9D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1005679B22885B83000F5F9D /* PreferenceBundles */,
+				100567892288583F000F5F9D /* PreferenceLoader */,
+				100567932288583F000F5F9D /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		100567892288583F000F5F9D /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				1005678A2288583F000F5F9D /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		1005678A2288583F000F5F9D /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				1005678B2288583F000F5F9D /* KeySwitch.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		1005678E2288583F000F5F9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1005678F2288583F000F5F9D /* KeySwitch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		100567932288583F000F5F9D /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				100567942288583F000F5F9D /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		100567942288583F000F5F9D /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				100567952288583F000F5F9D /* KeySwitch.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		1005679B22885B83000F5F9D /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				1005679C22885B83000F5F9D /* KeySwitch.bundle */,
+			);
+			name = PreferenceBundles;
+			path = Package/Library/PreferenceBundles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		100567782288583E000F5F9D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1005677A2288583E000F5F9D /* KeySwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100567982288583F000F5F9D /* Build configuration list for PBXNativeTarget "KeySwitch" */;
+			buildPhases = (
+				100567752288583E000F5F9D /* ShellScript */,
+				100567762288583E000F5F9D /* Sources */,
+				100567772288583E000F5F9D /* Frameworks */,
+				100567782288583E000F5F9D /* Headers */,
+				100567792288583E000F5F9D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeySwitch;
+			productName = KeySwitch;
+			productReference = 1005677B2288583E000F5F9D /* KeySwitch.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100567712288583D000F5F9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				TargetAttributes = {
+					1005677A2288583E000F5F9D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 100567742288583D000F5F9D /* Build configuration list for PBXProject "KeySwitch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 100567702288583D000F5F9D;
+			productRefGroup = 1005677C2288583E000F5F9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1005677A2288583E000F5F9D /* KeySwitch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		100567752288583E000F5F9D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		100567792288583E000F5F9D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100567762288583E000F5F9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100567922288583F000F5F9D /* KeySwitch.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		100567962288583F000F5F9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"KeySwitch\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		100567972288583F000F5F9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"KeySwitch\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		100567992288583F000F5F9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeySwitch/KeySwitch-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 172.20.10.1;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 22;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1005679A2288583F000F5F9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeySwitch/KeySwitch-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 172.20.10.1;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 22;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100567742288583D000F5F9D /* Build configuration list for PBXProject "KeySwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100567962288583F000F5F9D /* Release */,
+				100567972288583F000F5F9D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100567982288583F000F5F9D /* Build configuration list for PBXNativeTarget "KeySwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100567992288583F000F5F9D /* Release */,
+				1005679A2288583F000F5F9D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100567712288583D000F5F9D /* Project object */;
+}
